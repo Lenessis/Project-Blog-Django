@@ -1,0 +1,110 @@
+:root
+{
+    /* Variables section */
+
+    /*COLORS*/
+    --color_light_blue: #DFE7F1;
+    --color_blue: #9BBCE4;
+    --color_white: white;
+    --color_darkgray: #555;
+
+    /*WIDTHS*/
+
+    /*FONTS*/
+    --main_font: 'Georgia';
+    --headers_font: 'Lato';
+}
+
+*
+{
+    /* Set margins to zero */
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background: linear-gradient(180deg, var(--color_light_blue), var(--color_blue)) no-repeat;
+    background-attachment: fixed;
+    font-family: var(--main_font);
+}
+
+.container
+{
+    margin: 20px auto;
+    text-align: center;
+}
+
+.banner
+{
+    width: 75%;
+    margin: 10px auto;
+    padding: 40px;
+    background-color: var(--color_white);
+}
+.home_link, .nav_links
+{
+    color: var(--color_darkgray);
+    text-decoration: none;
+}
+.navigation
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav_links
+{
+    display: block;
+    background-color: cornflowerblue;
+    color: var(--color_white);
+    padding: 15px 30px;
+    margin: 0 10px;
+    transition: .5s;
+    font-family: var(--headers_font);
+    font-weight: bold;
+}
+
+.nav_links:hover
+{
+    transform: scale(1.2);
+    background-color: var(--color_blue);
+}
+
+.section_label
+{
+    margin-bottom: 30px;
+    font-family: var(--headers_font);
+}
+
+.articles
+{
+    background-color: white;
+    width: 75%;
+    margin: 15px auto;
+    padding: 40px;
+    text-align: left;
+}
+
+.comments
+{
+    margin: 20px 0;
+}
+
+.single_comment
+{
+    background-color: var(--color_light_blue);
+    color: var(--color_darkgray);
+    padding: 15px 30px;
+    margin: 20px 0;
+}
+.nicknames
+{
+    margin-bottom: 15px;
+}
+
+.footer
+{
+    color: var(--color_darkgray);
+}
